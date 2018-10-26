@@ -12,9 +12,14 @@ $(document).ready(function() {
 
 function numberCycle (inputNumber) {
   var range = [];
-  console.log(inputNumber)
-  for (var i = 0; i <= inputNumber; i++) {
-    range.push(i)
+  if (inputNumber >= 0) {
+    for (var i = 0; i <= inputNumber; i++) {
+      range.push(i)
+    }
+  } else if (inputNumber < 0) {
+    for (var i = 0; i >= inputNumber; i--) {
+      range.push(i)
+    }
   }
   return range
 }
