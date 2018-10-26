@@ -22,12 +22,12 @@ No known bugs
 _Noah Schooler: noahschooler1@gmail.com_
 
 ## Behavioral Specs
-* FNumbers containing 0 are replaced with "Beep!":
-  * Expect input("10") === ("Beep")
-* Numbers containing 1 are replaced with "Boop!":
-  * Expect romNum("3") === ("III")
-* Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that.":
-  * Expect input("9") === ("I'm sorry, Dave. I'm afraid I can't do that.")
+* Program replaces 0 with "Beep!":
+  * Expect input("0") to return ("Beep")
+* Program replaces 1 with "Boop!":
+  * Expect input("1") to return ("Boop!")
+* Program replaces 3 with "I'm sorry, Dave. I'm afraid I can't do that.":
+  * Expect input("3") to return ("I'm sorry, Dave. I'm afraid I can't do that.")
 
 ## Technologies Used
 
