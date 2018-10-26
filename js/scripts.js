@@ -11,7 +11,7 @@ function zero (number) {
 function divisibleByThree (number) {
   if (number % 3 === 0) {
     return "I'm sorry, Dave. I'm afraid I can't do that."
-  } else if () {
+  } else if (number % 3 ==! 3) {
     searchForZero(number)
   }
 }
@@ -21,7 +21,17 @@ function searchForZero (number) {
   console.log(string);
   var stringIncludesZero = string.includes(0)
   console.log(stringIncludesZero);
-  if (stringIncludesZero === true;) {
+  if (stringIncludesZero === true) {
     return "Beep!"
+  }
+}
+
+function searchForOne (number) {
+  var string = number.toString()
+  console.log(string);
+  var stringIncludesOne = string.includes(1)
+  console.log(stringIncludesOne);
+  if (stringIncludesOne === true) {
+    return "Boop!"
   }
 }
