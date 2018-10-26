@@ -1,3 +1,12 @@
+$(document).ready(function() {
+  $("#number").submit(function(event) {
+    event.preventDefault();
+
+    var inputNumber = parseInt($("#inputNumber").val());
+
+  });
+});
+
 function zero (number) {
   if (number === 0) {
     return "Beep!"
@@ -8,19 +17,19 @@ function zero (number) {
   }
 }
 
-var processNumber = function (number) {
+ function processNumber (number) {
   if (number < 0) {
     return "Please enter a whole number"
   }
 }
 
-var divisibleByThree = function (number) {
+function divisibleByThree (number) {
   if (number % 3 === 0) {
     return "I'm sorry, Dave. I'm afraid I can't do that."
   } console.log(divisibleByThree)
 }
 
-var searchForZero = function (number) {
+function searchForZero (number) {
   var string = number.toString()
   var stringIncludesZero = string.includes(0)
   if (stringIncludesZero === true) {
@@ -28,7 +37,7 @@ var searchForZero = function (number) {
   }
 }
 
-var searchForOne = function (number) {
+function searchForOne (number) {
   var string = number.toString()
   var stringIncludesOne = string.includes(1)
   if (stringIncludesOne === true) {
@@ -36,13 +45,15 @@ var searchForOne = function (number) {
   }
 }
 
-var userInput = [3]
-
-function numberCycle (userInput) {
+function numberCycle (inputNumber) {
   var range = [];
-  console.log(userInput)
-  for (var i = 0; i < userInput; i++) {
+  console.log(inputNumber)
+  for (var i = 0; i < inputNumber; i++) {
     range.push(i)
   }
-  return range;
+  return range
+}
+
+function evaluateNums (range) {
+  range.forEach()
 }
