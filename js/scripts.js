@@ -3,18 +3,20 @@ $(document).ready(function() {
     event.preventDefault();
 
     var inputNumber = parseInt($("#inputNumber").val());
+    var result = numberCycle(inputNumber)
+    $("#results").text(result)
 
   });
 });
 
-function zero (number) {
-  if (number === 0) {
-    return "Beep!"
-  } else if (number === 1) {
-    return "Boop!"
-  } else if (number === 3) {
-    return "I'm sorry, Dave. I'm afraid I can't do that."
+
+function numberCycle (inputNumber) {
+  var range = [];
+  console.log(inputNumber)
+  for (var i = 0; i <= inputNumber; i++) {
+    range.push(i)
   }
+  return range
 }
 
  function processNumber (number) {
@@ -45,14 +47,6 @@ function searchForOne (number) {
   }
 }
 
-function numberCycle (inputNumber) {
-  var range = [];
-  console.log(inputNumber)
-  for (var i = 0; i < inputNumber; i++) {
-    range.push(i)
-  }
-  return range
-}
 
 function evaluateNums (range) {
   range.forEach()
