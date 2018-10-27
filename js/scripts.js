@@ -3,7 +3,7 @@ $(document).ready(function() {
     event.preventDefault();
 
     var inputNumber = parseInt($("#inputNumber").val());
-    var result = replaceNums(range)
+    var result = listRange(inputNumber)
     $("#results").text(result)
 
   });
@@ -20,18 +20,18 @@ function listRange(inputNumber) {
       range.push(inputNumber)
     }
   }
-  return range
+  return replaceNums(range)
 }
 
 function replaceNums(range) {
   var newRange = [];
-
   range.forEach(function(number) {
-
     var string = number.toString()
     var stringIncludesZero = string.includes(0)
     var stringIncludesOne = string.includes(1)
-    if (number % 3 === 0) {
+    if (number === 0) {
+      newRange.push("Beep")
+    } else if (number % 3 === 0) {
       newRange.push("I'm sorry, Dave. I'm afraid I can't do that.")
     } else if (stringIncludesOne === true) {
       newRange.push("Boop!")
