@@ -9,22 +9,7 @@ $(document).ready(function() {
   });
 });
 
-function replaceNums (number) {
-  var string = number.toString()
-  var stringIncludesZero = string.includes(0)
-  var stringIncludesOne = string.includes(1)
-  if (number % 3 === 0) {
-    return "I'm sorry, Dave. I'm afraid I can't do that."
-  } else if (stringIncludesZero === true) {
-    return "Beep!"
-  } else if (stringIncludesOne === true) {
-    return "Boop!"
-  } else {
-    return number
-  }
-}
-
-function listRange (inputNumber) {
+function listRange(inputNumber) {
   var range = [];
   if (inputNumber >= 0) {
     for (var i = 0; i <= inputNumber; i++) {
@@ -38,24 +23,17 @@ function listRange (inputNumber) {
   return range
 }
 
-function divisibleByThree (number) {
-  if (number % 3 === 0) {
-    return "I'm sorry, Dave. I'm afraid I can't do that."
-  }
-}
-
-function searchForZero (number) {
+function replaceNums(number) {
   var string = number.toString()
   var stringIncludesZero = string.includes(0)
-  if (stringIncludesZero === true) {
-    return "Beep!"
-  }
-}
-
-function searchForOne (number) {
-  var string = number.toString()
   var stringIncludesOne = string.includes(1)
-  if (stringIncludesOne === true) {
+  if (number % 3 === 0) {
+    return "I'm sorry, Dave. I'm afraid I can't do that."
+  } else if (stringIncludesOne === true) {
     return "Boop!"
+  } else if (stringIncludesZero === true) {
+    return "Beep!"
+  } else {
+    return number
   }
 }
