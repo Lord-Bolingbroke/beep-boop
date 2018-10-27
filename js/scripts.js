@@ -17,8 +17,8 @@ function numberCycle (inputNumber) {
       range.push(i)
     }
   } else if (inputNumber < 0) {
-    for (var i = 0; i >= inputNumber; i--) {
-      range.push(i)
+    for (var i = 0; i >= inputNumber; inputNumber++) {
+      range.push(inputNumber)
     }
   }
   return range
