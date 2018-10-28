@@ -16,16 +16,15 @@ function listRange(inputNumber) {
 function replaceNums(range) {
   var newRange = [];
   range.forEach(function(number) {
-    var string = number.toString()
-    var stringIncludesZero = string.includes(0)
-    var stringIncludesOne = string.includes(1)
+    var numberIncludesZero = number.toString().includes(0)
+    var numberIncludesOne = number.toString().includes(1)
     if (number === 0) {
       newRange.push("Beep!")
     } else if (number % 3 === 0) {
       newRange.push("I'm sorry, Dave. I'm afraid I can't do that.")
-    } else if (stringIncludesOne === true) {
+    } else if (numberIncludesOne === true) {
       newRange.push("Boop!")
-    } else if (stringIncludesZero === true) {
+    } else if (numberIncludesZero === true) {
       newRange.push("Beep!")
     } else {
       newRange.push(number)
