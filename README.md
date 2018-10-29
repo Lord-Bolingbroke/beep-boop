@@ -5,7 +5,7 @@
 #### By _Noah Schooler_
 
 ## Description
-_The website takes an integer inputted by the user and returns the range of integers between zero and the input, replacing certain numbers with text (described in the behavioral specs below)._
+_The website takes an integer inputted by the user and returns the range of integers between zero and the input, replacing certain numbers with text (described in the behavioral specs below). The site can be accessed at https://lord-bolingbroke.github.io/beep-boop/_
 
 ## Setup/Installation Requirements
 * Clone code from the repository
