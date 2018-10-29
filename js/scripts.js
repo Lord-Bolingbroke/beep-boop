@@ -1,3 +1,12 @@
+// User interface logic
+$(document).ready(function() {
+  $("#number").submit(function(event) {
+    event.preventDefault();
+    var inputNumber = parseInt($("#inputNumber").val());
+    $("#results").text(listRange(inputNumber))
+  });
+});
+
 // Business logic
 function listRange(inputNumber) {
   var range = [];
@@ -16,8 +25,8 @@ function listRange(inputNumber) {
 function replaceNums(range) {
   var newRange = [];
   range.forEach(function(number) {
-    var numberIncludesZero = number.toString().includes(0)
     var numberIncludesOne = number.toString().includes(1)
+    var numberIncludesZero = number.toString().includes(0)
     if (number === 0) {
       newRange.push("Beep!")
     } else if (number % 3 === 0) {
@@ -32,13 +41,3 @@ function replaceNums(range) {
   });
   return newRange
 }
-
-// User interface logic
-$(document).ready(function() {
-  $("#number").submit(function(event) {
-    event.preventDefault();
-    var inputNumber = parseInt($("#inputNumber").val());
-    var result = listRange(inputNumber)
-    $("#results").text(result)
-  });
-});
