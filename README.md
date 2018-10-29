@@ -12,7 +12,7 @@ _The website takes an integer inputted by the user and returns the range of inte
 * Open index.html in a browser
 
 ## Known Bugs
-There are no spaces between the outputted values, and the text outputs are not within quotation marks.
+No known bugs.
 
 ## Support and contact details
 _Noah Schooler: noahschooler1@gmail.com_
@@ -24,12 +24,12 @@ _Noah Schooler: noahschooler1@gmail.com_
   * Expect input(71) to return ("Boop!")
 * Program replaces numbers divisible by 3 with "I'm sorry, Dave. I'm afraid I can't do that.":
   * Expect input(9) to return ("I'm sorry, Dave. I'm afraid I can't do that.")
-* Program applies the above rules in increasing order of priority—numbers that contain both 0 and 1 are replaced with "Boop!"; numbers that both contain one and are divisible by three are replaced with "I'm sorry, Dave. ...":
+* Program applies the above rules in increasing order of priority—numbers that contain both 0 and 1 are replaced with "Boop!"; numbers that both contain 1 and are divisible by 3 are replaced with "I'm sorry, Dave. ...":
   * Expect input(12) to return ("I'm sorry, Dave. ...")
   * Expect input(10) to return ("Boop!")
   * Expect input(90) to return ("I'm sorry, Dave. ...")
 * Program returns the range of integers between 0 and the user input using the above rules:
-  * Expect input(5) to return ("Beep!", "Boop!", 2, "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5)
+  * Expect input(5) to return ("I'm sorry, Dave. I'm afraid I can't do that.", "Boop!", 2, "I'm sorry, Dave. I'm afraid I can't do that.", 4, 5)
 
 ## Technologies Used
 _Bootstrap, jQuery, and JavaScript_

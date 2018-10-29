@@ -27,16 +27,14 @@ function replaceNums(range) {
   range.forEach(function(number) {
     var numberIncludesOne = number.toString().includes(1)
     var numberIncludesZero = number.toString().includes(0)
-    if (number === 0) {
-      newRange.push("Beep!")
-    } else if (number % 3 === 0) {
-      newRange.push("I'm sorry, Dave. I'm afraid I can't do that.")
+    if (number % 3 === 0) {
+      newRange.push(' "I\'m sorry, Dave. I\'m afraid I can\'t do that."')
     } else if (numberIncludesOne === true) {
-      newRange.push("Boop!")
+      newRange.push(' "Boop!"')
     } else if (numberIncludesZero === true) {
-      newRange.push("Beep!")
+      newRange.push(' "Beep!"')
     } else {
-      newRange.push(number)
+      newRange.push(" " + number)
     }
   });
   return newRange
